@@ -11,6 +11,20 @@ body {
 	padding: 2rem;
 }
 
+#root {
+	display: flex;
+}
+
+aside {
+	width: 20%;
+	max-width: 300px;
+}
+
+main {
+	width: 80%;
+	max-width: 900px;
+}
+
 section {
 	margin-top: 2rem;
 }
@@ -21,7 +35,8 @@ section {
 }
 
 .counter,
-.type-box {
+.type-box,
+.resource-display {
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -29,11 +44,18 @@ section {
 	gap: 1rem;
 }
 
-.counter > .example > button {
+.counter > .example > button,
+.resource-display > .example > div > button {
 	padding-top: 0.2rem;
 	padding-left: 0.8rem;
 	padding-bottom: 0.2rem;
 	padding-right: 0.8rem;
+}
+
+.resource-display > .example > div {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
 }
 
 .counter > .example {
