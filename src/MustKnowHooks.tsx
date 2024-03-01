@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-/* useState */
+/* ------------------------------useState--------------------------------------------- */
 
 // REACT reacts to state changes
 
@@ -108,6 +108,8 @@ export function SimpleInput() {
 
 /* ----------------------------------------------------------------------------------------- */
 
+/* ------------------------useEffect------------------------------------------------- */
+
 export function ResourceDisplay() {
 	const [resourceType, setResourceType] = useState("users");
 
@@ -186,7 +188,7 @@ export function ResourceDisplay2() {
 
 	return (
 		<div className='resource-display'>
-			<div className='title'>Window width displayer</div>
+			<div className='title'>Window width display</div>
 			<div className='example'>
 				<div>{windowWidth}</div>
 			</div>
@@ -210,3 +212,26 @@ export function ResourceDisplay2() {
 */
 
 /* -------------------------------------------------------------------------- */
+
+/* --------------------------------useContext----------------------------------- */
+
+// the following is the common way of using context...
+
+import ReactContext from "./ReactContext";
+
+export function ContextHook() {
+	return (
+		<div className='context-display'>
+			<div className='title'>Theme Context</div>
+			<div className='example'>
+				<div>
+					<ReactContext />
+				</div>
+			</div>
+			<p className='description'>
+				Created with <i>useContext</i> hook. Click the toggle theme button to see
+				what happens.
+			</p>
+		</div>
+	);
+}

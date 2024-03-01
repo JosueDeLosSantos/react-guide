@@ -1,5 +1,11 @@
 import "./App.css";
-import { Counter, SimpleInput, ResourceDisplay, ResourceDisplay2 } from "./MustKnowHooks";
+import {
+	Counter,
+	SimpleInput,
+	ResourceDisplay,
+	ResourceDisplay2,
+	ContextHook,
+} from "./MustKnowHooks";
 import SideBar from "./SideBar";
 
 function App() {
@@ -14,6 +20,7 @@ function App() {
 					<SimpleInput />
 					<ResourceDisplay />
 					<ResourceDisplay2 />
+					<ContextHook />
 				</section>
 			</main>
 		</>
